@@ -1,0 +1,2 @@
+class CantFollow(Exception):
+    pass
