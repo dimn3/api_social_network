@@ -1,9 +1,10 @@
 import base64
 
 from django.core.files.base import ContentFile
-from posts.models import Comment, Follow, Group, Post, User
 from rest_framework import exceptions, serializers
 from rest_framework.validators import UniqueTogetherValidator
+
+from posts.models import Comment, Follow, Group, Post, User
 
 
 class Base64ImageField(serializers.ImageField):
@@ -44,7 +45,7 @@ class CommentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Comment
         fields = ('id', 'author', 'post', 'text', 'created')
-        read_only_fields = ('author', 'post',)
+        read_only_fields = ('post',)
 
 
 class FollowSerializer(serializers.ModelSerializer):
@@ -68,7 +69,7 @@ class FollowSerializer(serializers.ModelSerializer):
             )
         ]
 
-    def validate(self, data):
-        if self.context['request'].user == data['following']:
+    def validate_following(self, data):
+        if self.context.get('request') == data['following']:
             raise exceptions.ValidationError('Невозможно подписаться на себя')
         return data
