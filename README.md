@@ -1,4 +1,4 @@
-# Спринт 9 для Yandex.Praktikum - REST API для проекта Yatube
+REST API для проекта Yatube
 ## Описание проекта
 Проект представляет собой REST API для проекта Yatube - социальной сети для публикации личных дневников.
 Более подробно описание проекта Yatube представлено в https://github.com/dimn3/api_final_yatube#readme
