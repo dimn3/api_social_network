@@ -1,7 +1,5 @@
-REST API для проекта Yatube
 ## Описание проекта
 Проект представляет собой REST API для социальной сети для публикации личных дневников.
-Более подробно описание проекта представлено в https://github.com/dimn3/api_final_yatube#readme
 В данном проекте REST API для проекта реализован следующий функционал:
 * Получение списка публикаций или отдельной публикации по id.
 * Просмотр, создание, удаление и изменение записей (публикаций).
@@ -20,7 +18,7 @@ REST API для проекта Yatube
 * Simple-JWT 4.7.2
 ## Установка проекта
 Клонируйте данный репозиторий на свой компьютер и перейдите в папку проекта.
-<pre><code>git clone https://github.com/dimn3/api_final_yatube</code>
+<pre><code>git clone https://github.com/dimn3/api_social_network</code>
 <code>cd api_final_yatube</code></pre>
 Создайте и активируйте виртуальное окружение:
 <pre><code>python -m venv venv</code>
