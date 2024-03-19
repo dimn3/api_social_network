@@ -19,7 +19,6 @@
 ## Установка проекта
 Клонируйте данный репозиторий на свой компьютер и перейдите в папку проекта.
 <pre><code>git clone https://github.com/dimn3/api_social_network</code>
-<code>cd api_final_yatube</code></pre>
 Создайте и активируйте виртуальное окружение:
 <pre><code>python -m venv venv</code>
 <code>source venv/Scripts/activate  #для Windows</code>
